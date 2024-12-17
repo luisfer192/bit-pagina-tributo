@@ -1,11 +1,23 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Encabezado */
@@ -18,13 +30,8 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 10px;
     font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
 }
 
 /* Navegación */
@@ -34,12 +41,18 @@ nav {
     padding: 10px 0;
 }
 
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-    padding: 5px 10px;
     transition: color 0.3s;
 }
 
@@ -49,28 +62,23 @@ nav a:hover {
 
 /* Secciones */
 section {
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 20px;
-    max-width: 800px;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
+    margin-bottom: 10px;
     color: #000;
     border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 section ul {
     list-style-type: square;
-    padding-left: 20px;
-}
-
-section li {
-    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 /* Pie de página */
@@ -79,8 +87,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
 }
